@@ -1,0 +1,31 @@
+{
+  "name": "wui",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "startblingbling <1611967119@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/wui.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__",
+    "src": "src"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://packages.aliyun.com/61e54b0e0bb300d827e1ae27/npm/npm-registry/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/wui.test.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.9",
+    "sass": "^1.54.7",
+    "sass-loader": "10.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1"
+  }
+}

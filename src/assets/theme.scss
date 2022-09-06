@@ -1,0 +1,22 @@
+@mixin custom-light-theme {
+    --custom-text-link:#42b983;
+}
+@mixin custom-dark-theme {
+    --custom-text-link:#8fe8c0;
+}
+.light{
+    @include custom-light-theme;
+}
+.dark{
+    @include custom-light-theme;
+}
+/* OS Default. */
+:root:not(.light):not(.dark) {
+    @media (prefers-color-scheme: light) {
+      @include custom-light-theme;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      @include custom-light-theme;
+    }
+  }
