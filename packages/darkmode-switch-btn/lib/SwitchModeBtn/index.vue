@@ -28,6 +28,7 @@ const modeList = {
   light: "light-icon",
   dark: "dark-icon",
 };
+
 export default {
   name: "SwitchModeBtn",
   components: {
