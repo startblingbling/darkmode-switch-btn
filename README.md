@@ -1,4 +1,4 @@
-# wui
+# darkmode-switch-btn
 
 ## Project setup
 ```
