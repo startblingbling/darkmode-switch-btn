@@ -23,7 +23,6 @@
 import "element-ui/lib/theme-chalk/index.css";
 import { Dropdown, DropdownMenu, DropdownItem } from "element-ui";
 
-
 const modeList = {
   "os-default": "os-default-icon",
   light: "light-icon",
