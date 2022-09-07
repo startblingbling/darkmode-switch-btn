@@ -38,7 +38,9 @@ export default {
   },
   created(){
     const theme = window.localStorage.getItem("theme");
-    this.mode=theme;
+    if(theme){
+      this.mode=theme;
+    }
     const html = document.documentElement;
     if (window && html) {
       // 插入 meta 标签
@@ -52,6 +54,8 @@ export default {
   },
   computed: {
     getModeClass() {
+      console.log(this.mode)
+      console.log(modeList[this.mode])
       return modeList[this.mode];
     },
   },
@@ -95,13 +99,13 @@ export default {
   color: var(--text-primary);
 }
 .os-default-icon {
-  mask-image: url("../../src/assets/os-default.svg");
+  mask-image: url("../src/assets/os-default.svg");
 }
 .light-icon {
-  mask-image: url("../../src/assets/light.svg");
+  mask-image: url("../src/assets/light.svg");
 }
 .dark-icon {
-  mask-image: url("../../src/assets/dark.svg");
+  mask-image: url("../src/assets/dark.svg");
 }
 
 .el-dropdown-menu__item:focus,
@@ -111,7 +115,7 @@ export default {
 }
 </style>
 <style lang="scss">
-@import "../../src/style/theme.scss";
+@import "../src/style/theme.scss";
 .switchModeBtn {
   .themeBtn {
     font-weight: 500;
@@ -124,6 +128,7 @@ export default {
     color: var(--text-primary);
     border: 1px solid var(--border-primary);
     cursor: pointer;
+   
   }
   .themeBtn:hover{
     --button-bg: var(--border-secondary);
