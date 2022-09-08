@@ -353,7 +353,7 @@ body,
   --wui-background-light-grey: #{$wui-color-neutral-10};
   --color-announcement-banner-accent: #{$wui-color-light-theme-pink-40};
 }
-*{
+h1,h2,h3,h4,h5,h6,span,div,p,ul,li{
 	color:var(--text-primary)
 }
 

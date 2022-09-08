@@ -43,11 +43,6 @@ export default {
     }
     const html = document.documentElement;
     if (window && html) {
-      // 插入 meta 标签
-      var oMeta = document.createElement("meta");
-      oMeta.content = "light dark";
-      oMeta.name = "color-scheme";
-      document.getElementsByTagName("head")[0].appendChild(oMeta);
       html.className = theme?theme:modeList[this.mode];
       html.style.backgroundColor = "";
     }
