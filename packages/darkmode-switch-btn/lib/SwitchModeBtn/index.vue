@@ -121,7 +121,7 @@ export default {
     height: 30px;
     font-weight: 500;
     padding:5px 10px;
-    border-radius: 15px;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
