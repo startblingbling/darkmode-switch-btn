@@ -123,6 +123,7 @@ export default {
     align-items: center;
     vertical-align: text-bottom;
   .themeBtn {
+    height: 30px;
     font-weight: 500;
     padding:5px 10px;
     border-radius: 15px;
