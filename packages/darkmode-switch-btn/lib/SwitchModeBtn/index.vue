@@ -116,6 +116,7 @@ export default {
 </style>
 <style lang="scss">
 @import "../src/style/theme.scss";
+
 .switchModeBtn {
   .themeBtn {
     font-weight: 500;
