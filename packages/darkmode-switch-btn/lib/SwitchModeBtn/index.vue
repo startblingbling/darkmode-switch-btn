@@ -116,6 +116,12 @@ export default {
 @import "../src/style/theme.scss";
 
 .switchModeBtn {
+  height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: text-bottom;
   .themeBtn {
     font-weight: 500;
     padding:5px 10px;
