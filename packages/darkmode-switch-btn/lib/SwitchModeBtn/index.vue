@@ -48,14 +48,12 @@ export default {
       oMeta.content = "light dark";
       oMeta.name = "color-scheme";
       document.getElementsByTagName("head")[0].appendChild(oMeta);
-      html.className = theme;
+      html.className = theme?theme:modeList[this.mode];
       html.style.backgroundColor = "";
     }
   },
   computed: {
     getModeClass() {
-      console.log(this.mode)
-      console.log(modeList[this.mode])
       return modeList[this.mode];
     },
   },
